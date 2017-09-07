@@ -1,0 +1,50 @@
+{
+  "name": "markdown-it-extensible-fence",
+  "version": "0.0.1",
+  "description": "Plugin to create block-level extensible fences for markdown-it markdown parser",
+  "main": "index.js",
+  "scripts": {
+    "build": "gulp",
+    "lint": "eslint --fix .js .",
+    "test": "mocha test/index.js"
+  },
+  "keywords": [
+    "markdown",
+    "markdown-it",
+    "markdownit",
+    "extensible",
+    "container"
+  ],
+  "author": "ucev <zhangshuaiyf@icloud.com>",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ucev/markdown-it-extensible-fence"
+  },
+  "bugs": {
+    "url": "https://github.com/ucev/markdown-it-extensible-fence/issues"
+  },
+  "homepage": "https://github.com/ucev/markdown-it-extensible-fence#readme",
+  "license": "MIT",
+  "devDependencies": {
+    "babel-eslint": "^7.2.3",
+    "babel-preset-es2015": "^6.24.1",
+    "babelify": "^7.3.0",
+    "browserify": "^14.4.0",
+    "chai": "^4.1.2",
+    "eslint": "^4.6.1",
+    "eslint-config-standard": "^10.2.1",
+    "eslint-friendly-formatter": "^3.0.0",
+    "eslint-loader": "^1.9.0",
+    "eslint-plugin-import": "^2.7.0",
+    "eslint-plugin-node": "^5.1.1",
+    "eslint-plugin-promise": "^3.5.0",
+    "eslint-plugin-standard": "^3.0.1",
+    "gulp": "^3.9.1",
+    "gulp-babel": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-uglify": "^3.0.0",
+    "markdown-it": "^8.4.0",
+    "mocha": "^3.5.0",
+    "vinyl-source-stream": "^1.1.0"
+  }
+}
