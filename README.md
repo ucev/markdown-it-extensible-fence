@@ -4,6 +4,26 @@
 
 With this plugin you can toogle `pre` blocks' visible state, if it is too long. Used in browser.
 
+This plugin renders following text
+
+````
+```
+To be or not to be
+This is a question
+```
+````
+
+as:
+
+````
+<div class='extensible-fence'><i class='extensible-fence-btn'></i><pre><code>To be or not to be
+This is a question
+</code></pre>
+</div>
+````
+
+Classnames are configurable.
+
 ## Installation
 
 npm

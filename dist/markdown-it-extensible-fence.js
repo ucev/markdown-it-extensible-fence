@@ -4,14 +4,19 @@
 var originOptions = {
   className: 'extensible-fence'
 };
+var CURRENT_TOKEN = '__TOKEN-' + Date.now() + '__';
+
 module.exports = function containerPlugin(md, opts) {
-  var _options = Object.assign(originOptions, opts);
+  var className = opts && opts.className || originOptions.className;
   var defaultRenderer = md.renderer.rules.fence;
   function render(tokens, idx, options, env, slf) {
     var origin = defaultRenderer(tokens, idx, options, env, slf);
-    return '<div class=\'' + _options.className + '\'><i class=\'' + (_options.className + '-btn') + '\'></i>' + origin + '</div>';
+    return '<div class=\'' + className + '\'><i class=\'' + className + '-btn\'></i>' + origin + '</div>';
   }
-  md.renderer.rules.fence = render;
+  if (!md[CURRENT_TOKEN]) {
+    md.renderer.rules.fence = render;
+    md[CURRENT_TOKEN] = true;
+  }
 };
 
 },{}]},{},[1])(1)
