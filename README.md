@@ -32,6 +32,9 @@ npm
 $ npm install --save-dev markdown-it-extensible-fence
 ```
 
+browser
+* [js file](dist/markdown-it-extensible-fence.min.js)
+
 ## API
 
 ```js
@@ -47,8 +50,14 @@ Params:
 ## Example
 
 ```js
+// nodejs
 var md = require('markdown-it')
 md.use(require('markdown-it-extensible-fence'), {className: 'pre-container'})
+
+
+// browser
+var md = window.markdownit()
+md.use(markdownItExtensibleFence)
 ...
 // after render and append it to dom
 var containers = document.getElementsByTagName('prev-container')

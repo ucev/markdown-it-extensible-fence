@@ -1,7 +1,7 @@
 const originOptions = {
   className: 'extensible-fence'
 }
-const CURRENT_TOKEN = `__TOKEN-${Date.now()}__`;
+const CURRENT_TOKEN = `__TOKEN-MARKDOWN-IT-EXTENSIBLE-FENCE-${Date.now()}__`;
 
 module.exports = function containerPlugin (md, opts) {
   var className = opts && opts.className || originOptions.className
